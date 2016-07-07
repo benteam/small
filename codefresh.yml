@@ -2,6 +2,7 @@ version: '1.0'
 steps:
   
   build-djanga:
+
     type: build
     dockerfile: Dockerfile
     image-name: ben/small
