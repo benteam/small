@@ -12,4 +12,4 @@ steps:
       # Simple commands can be written inline
       - echo my var $TEST
       - echo pipeline var $TEST2
-      - echo only from workflow call: $TEST3
+      - echo only from workflow call $TEST3
