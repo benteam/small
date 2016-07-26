@@ -1,12 +1,13 @@
+# Run A Freestyle Step With Complex Commands
 version: '1.0'
+
 steps:
-  
-  build-djanga:
-
-    type: build
-    dockerfile: Dockerfile
-    image-name: ben/small
-    tag: nicetag
-
-    
-    
+  my-step:
+    image: ubuntu:latest
+    environment:
+      - TEST = test
+      - TEST2 = ${{TEST2}}
+    commands:
+      # Simple commands can be written inline
+      - echo my var $TEST
+      - echo pipeline var $TEST2
