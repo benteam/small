@@ -15,3 +15,5 @@ steps:
       - echo pipeline var $TEST2
       - echo only from workflow call $TEST3
       - echo only from service $TEST4
+      
+      
