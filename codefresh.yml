@@ -7,7 +7,9 @@ steps:
     environment:
       - TEST=test
       - TEST2=${{TEST2}}
+      - TEST3=${{TEST3}}
     commands:
       # Simple commands can be written inline
       - echo my var $TEST
       - echo pipeline var $TEST2
+      - echo only from workflow call: $TEST3
