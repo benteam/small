@@ -5,8 +5,8 @@ steps:
   my-step:
     image: ubuntu:latest
     environment:
-      - TEST = test
-      - TEST2 = ${{TEST2}}
+      - TEST=test
+      - TEST2=${{TEST2}}
     commands:
       # Simple commands can be written inline
       - echo my var $TEST
