@@ -8,8 +8,10 @@ steps:
       - TEST=test
       - TEST2=${{TEST2}}
       - TEST3=${{TEST3}}
+      - TEST4=${{TEST4}}
     commands:
       # Simple commands can be written inline
       - echo my var $TEST
       - echo pipeline var $TEST2
       - echo only from workflow call $TEST3
+      - echo workflow call $TEST4
