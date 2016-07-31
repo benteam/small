@@ -1,4 +1,4 @@
 FROM busybox
 
-RUN echo ben was here also LOL2
+RUN echo ben was here also LOL
 
