@@ -11,6 +11,7 @@ steps:
       - TEST4=${{TEST4}}
     commands:
       # Simple commands can be written inline
+      - echo hello world
       - echo my var $TEST
       - echo pipeline var $TEST2
       - echo only from workflow call $TEST3
