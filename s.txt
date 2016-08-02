@@ -2,8 +2,4 @@ h
 cd
 d
 hello
-d
-d
-dsadsa
-ddd
-d
+ds
