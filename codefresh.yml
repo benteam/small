@@ -1,6 +1,7 @@
 # Run A Freestyle Step With Complex Commands
 version: '1.0'
 
+
 steps:
   my-step:
     image: ubuntu:latest
