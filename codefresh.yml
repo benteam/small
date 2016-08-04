@@ -1,0 +1,19 @@
+# Run A Freestyle Step With Complex Commands
+version: '1.0'
+
+
+steps:
+  my-step:
+    image: ubuntu:latest
+    environment:
+      - TEST=test
+      - TEST2=${{TEST2}}
+      - TEST3=${{TEST3}}
+      - TEST4=${{TEST4}}
+    commands:
+      # Simple commands can be written inline
+      - echo hello world
+      - echo my var $TEST
+      - echo pipeline var $TEST2
+      - echo only from workflow call $TEST3
+      - echo only from service $TEST4
